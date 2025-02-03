@@ -1,0 +1,9 @@
+[package]
+name = "actix-gcd"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "1.0.8"
+
+
