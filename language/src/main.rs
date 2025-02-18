@@ -3,11 +3,26 @@
 //const HOURS_A_DAY: u8 = 24;
 
 fn main() {
+	for n in (1..8).rev() { println!("{n}"); }
+
+	println!("LIFTOFF");
+
+/*	let mut counter = 0;
+
+	let result = loop { 
+		counter +=  1;
+		if counter == 10 {
+			break counter * 3;
+		}
+	};
+
+	println!("the result is {result}!");
+
 	let condition = false;
 	let number = if condition {5} else {9};
 
 
-	println!("number={number}");
+	println!("number={number}");*/
 }
 
 	/*
