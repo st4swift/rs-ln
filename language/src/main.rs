@@ -1,8 +1,16 @@
-use std::io;
+//use std::io;
 
 //const HOURS_A_DAY: u8 = 24;
 
 fn main() {
+	let condition = false;
+	let number = if condition {5} else {9};
+
+
+	println!("number={number}");
+}
+
+	/*
 	let a = [1, 2, 3, 4, 5];
 	println!("please enter an array index:");
 	let mut index = String::new();
@@ -12,7 +20,7 @@ fn main() {
 
 	println!("the value of the element at index {index} is: {element}.");
 
-/*   println!("Hello, world!");
+   println!("Hello, world!");
 
 	let mut spaces = "abcde";
 
@@ -30,4 +38,5 @@ fn main() {
 */
 
 
-}
+
+
