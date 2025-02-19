@@ -3,6 +3,27 @@
 //const HOURS_A_DAY: u8 = 24;
 
 fn main() {
+	let mut s = String::from("reference!!");
+
+	let s1 = &s;
+	let s2 = &s;
+	println!("s2={s2}   ");
+	println!("s1={s1}   ");
+
+
+	println!("s={s} ");
+
+	let  s3 = &mut s;
+
+
+	s3.push_str(" borrowing!!");
+	println!("s3={s3}");
+
+
+	println!("s={s} ");
+
+//	println!("s1={s1}   ");
+	/*
 	let mut s: &str = "kkkkkk";
 	println!("{s}");
 	println!("{:?}", s);
@@ -15,7 +36,7 @@ fn main() {
 
 	println!("{s}");
 
-/*	for n in (1..8).rev() { println!("{n}"); }
+	for n in (1..8).rev() { println!("{n}"); }
 
 	println!("LIFTOFF");
 
