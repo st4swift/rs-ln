@@ -3,11 +3,23 @@
 //const HOURS_A_DAY: u8 = 24;
 
 fn main() {
-	for n in (1..8).rev() { println!("{n}"); }
+	let mut s: &str = "kkkkkk";
+	println!("{s}");
+	println!("{:?}", s);
+
+	let mut s = String::from("LLLOOOOOOLLL"); 
+	
+	println!("{s}");
+	
+	s.push_str(", Hello");
+
+	println!("{s}");
+
+/*	for n in (1..8).rev() { println!("{n}"); }
 
 	println!("LIFTOFF");
 
-/*	let mut counter = 0;
+	let mut counter = 0;
 
 	let result = loop { 
 		counter +=  1;
