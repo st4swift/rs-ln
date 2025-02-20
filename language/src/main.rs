@@ -2,7 +2,17 @@
 
 //const HOURS_A_DAY: u8 = 24;
 
+fn dangle() -> &String {
+	let s = String::from("Heloo");
+	&s
+}
+
+
 fn main() {
+	let reference_to_nothing = dangle();
+}
+
+/*
 	let mut s = String::from("reference!!");
 
 	let s1 = &s;
@@ -22,8 +32,8 @@ fn main() {
 
 	println!("s={s} ");
 
-//	println!("s1={s1}   ");
-	/*
+	println!("s1={s1}   ");
+	
 	let mut s: &str = "kkkkkk";
 	println!("{s}");
 	println!("{:?}", s);
@@ -55,10 +65,9 @@ fn main() {
 	let number = if condition {5} else {9};
 
 
-	println!("number={number}");*/
-}
+	println!("number={number}");
 
-	/*
+	
 	let a = [1, 2, 3, 4, 5];
 	println!("please enter an array index:");
 	let mut index = String::new();
@@ -83,6 +92,7 @@ fn main() {
 
 	let months: [&str; 12] = ["January", "February", "March", "April", "May", "June", "July",
 "August", "September", "October", "November", "December"];
+
 */
 
 
