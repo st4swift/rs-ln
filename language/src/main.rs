@@ -2,14 +2,39 @@
 
 //const HOURS_A_DAY: u8 = 24;
 
-fn dangle() -> &String {
+/*fn dangle() -> &String {
 	let s = String::from("Heloo");
 	&s
+}*/
+fn first_word(s: &str) -> &str {
+	let bytes = s.as_bytes();
+	for (i, &item) in bytes.iter().enumerate(){
+		if item == b' ' { return &s[..i]; }
+	}
+	&s[..]
 }
 
 
+
 fn main() {
-	let reference_to_nothing = dangle();
+
+	let s = String::from("rustthelanguage");
+
+	println!("the first word of s: {}", first_word(&s));
+
+	let s1 = "grok3 klkl";
+
+	println!("the first word of s: {}", first_word(&s1));
+	//let reference_to_nothing = dangle();
+
+	let a = [0.0, 1.0, 2.0, 3.0, 4.0];
+
+	let a1: &[f64] = &[1.0, 2.0, 3.0];
+
+	assert_eq!(a1, &a[1..4]);
+
+	assert_eq!(a1, &a);
+
 }
 
 /*
