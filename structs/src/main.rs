@@ -15,6 +15,13 @@ fn build_user(email: String, username: String)-> User{
 	}
 }
 
+#[derive(Debug)]
+struct Color(i32, i32, i32);
+
+#[derive(Debug)]
+struct Point(i32, i32, i32);
+
+
 fn main() {
 	let mut user1 = build_user(String::from("mail@example.com"), String::from("someone"));
 	println!("{:?}", user1);
@@ -29,5 +36,19 @@ fn main() {
 	};
 
 	println!("{:?}", user2);
+	println!("user1.username:{}", user1.username);
+
     println!("Hello, world!");
+
+	let white = Color(255, 255, 255);
+	let origin = Point(0, 0, 0);
+
+	println!("Color: {:?}, Point: {:?}.", white, origin);
+
+	let Point(x, y, z) = origin;
+
+	println!("x: {x}, y: {y}, z: {z}.");
+
+
+
 }
